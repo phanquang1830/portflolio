@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 80px 100px;
+
+  .content {
+    flex: 1;
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 48px;
+    color: #EEEEEE;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 18px;
+    color: #EEEEEE;
+    line-height: 1.6;
+    margin: 3rem 0;
+  }
+
+  .avatar {
+    flex: 0 0 30%;
+    margin-right: 2.5rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #EEEEEE;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.97);
+
+    }
+  }
+}
