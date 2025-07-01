@@ -1,3 +1,5 @@
+@use "@/assets/styles/variables" as *;
+
 .container {
   display: flex;
   flex-direction: row;
@@ -12,14 +14,14 @@
   }
 
   h1 {
-    font-size: 48px;
-    color: #EEEEEE;
+    font-size: $font-h2;
+    color: $text-color;
     margin-bottom: 2rem;
   }
 
   p {
-    font-size: 18px;
-    color: #EEEEEE;
+    font-size: $font-body;
+    color: $text-color;
     line-height: 1.6;
     margin: 3rem 0;
   }
@@ -33,7 +35,7 @@
       height: auto;
       border-radius: 50%;
       object-fit: cover;
-      border: 6px solid #EEEEEE;
+      border: 6px solid $text-color;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.97);
 
     }
