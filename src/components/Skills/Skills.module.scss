@@ -1,12 +1,23 @@
+@use "@/assets/styles/variables" as *;
+
 .skills {
   padding: 80px 100px;
-  background-color: #1a1a1a;
-  color: #eee;
+  background-color: $background-color;
+  color: $text-color;
 
   h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: $font-h2;
     margin-bottom: 3rem;
+
+    .white {
+        color: $text-color;
+    }
+
+
+    .blue {
+        color: $title-color;
+    }
   }
 
   .grid {
@@ -28,20 +39,78 @@
       }
 
       .icon {
-        font-size: 48px;
-        color: #00ffff;
+        font-size: $font-h2;
+        color: $title-color;
         margin-bottom: 1rem;
       }
 
       h3 {
         font-size: 20px;
         margin-bottom: 0.8rem;
-        color: #00ffff;
+        color: $title-color;
       }
 
       p {
-        font-size: 16px;
+        font-size: $font-body;
         line-height: 1.6;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills {
+    padding: 60px 50px;
+
+    h2 {
+      font-size: $font-h2-tablet;
+    }
+
+    .grid {
+      gap: 1.5rem;
+
+      .card {
+        .icon {
+          font-size: $font-h2-tablet;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: $font-body-tablet;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skills {
+    padding: 40px 20px;
+
+    h2 {
+      font-size: $font-h2-mobile;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+
+      .card {
+        .icon {
+          font-size: $font-h2-mobile;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: $font-body-mobile;
+        }
       }
     }
   }

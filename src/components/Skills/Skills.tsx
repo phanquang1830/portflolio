@@ -5,7 +5,9 @@ import styles from './Skills.module.scss';
 const Skills = () => {
   return (
     <section className={styles.skills}>
-      <h2>Skills</h2>
+      <h2>
+        <span className={styles.white}>My</span> <span className={styles.blue}>Skills</span>
+      </h2>
       <div className={styles.grid}>
         <div className={styles.card}>
           <FaReact className={styles.icon} />
