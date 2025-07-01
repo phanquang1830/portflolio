@@ -1,0 +1,206 @@
+@use "@/assets/styles/variables" as *;
+
+.contact {
+    padding: 80px 100px;
+    color: $text-color;
+    background-color: $background-color;
+
+    h2 {
+        text-align: center;
+        font-size: $font-h2;
+        margin-bottom: 3rem;
+
+        .white {
+            color: $text-color;
+        }
+
+        .blue {
+            color: $title-color;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+
+        .info {
+            flex: 1;
+            min-width: 300px;
+
+            p {
+                font-size: $font-body;
+                margin-bottom: 2rem;
+            }
+
+            .contactInfo {
+                margin-bottom: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                    color: $text-color;
+                    font-size: $font-body;
+
+                    .icon {
+                        color: $title-color;
+                        font-size: $font-body;
+                    }
+                }
+            }
+
+            .socials {
+                display: flex;
+                gap: 1.5rem;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 55px;
+                    height: 55px;
+                    border: 2px solid $title-color;
+                    border-radius: 50%;
+                    color: $title-color;
+                    font-size: 24px;
+                    transition: 0.3s ease;
+                    box-shadow: 0 0 0 rgba(0, 255, 255, 0);
+
+                    &:hover {
+                        color: #1a1a1a;
+                        background-color: $title-color;
+                        box-shadow: 0 0 15px $title-color, 0 0 30px $title-color;
+                        transform: translateY(-3px) scale(1.05);    
+                    }
+                }
+            }
+        }
+
+        .form {
+            flex: 1;
+            min-width: 300px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+
+            input,
+            textarea {
+                padding: 1rem;
+                border-radius: 8px;
+                border: none;
+                background-color: #2a2a2a;
+                color: $text-color;
+                font-size: $font-body;
+
+            }
+
+            textarea {
+                height: 150px;
+                resize: none;
+            }
+
+            button {
+                padding: 1rem;
+                background-color: $title-color;
+                color: #1a1a1a;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #66FFFF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    padding: 60px 50px;
+
+    h2 {
+      font-size: $font-h2-tablet;
+    }
+
+    .container {
+      gap: 2rem;
+    }
+
+    .info {
+      p {
+        font-size: $font-body-tablet;
+      }
+    }
+
+    .form {
+      input,
+      textarea {
+        font-size: $font-body-tablet;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px 20px;
+
+    h2 {
+      font-size: $font-h2-mobile;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .info,
+    .form {
+      width: 100%;
+
+      p {
+        font-size: $font-body-mobile;
+      }
+
+      .contactInfo div {
+        font-size: $font-body-mobile;
+
+        .icon {
+          font-size: $font-body-mobile;
+        }
+      }
+    }
+
+    .socials {
+      justify-content: center;
+
+      a {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+
+    .form {
+      input,
+      textarea {
+        font-size: $font-body-mobile;
+      }
+
+      button {
+        padding: 0.8rem;
+      }
+    }
+  }
+}
