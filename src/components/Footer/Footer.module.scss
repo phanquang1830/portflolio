@@ -1,0 +1,20 @@
+@use "@/assets/styles/variables" as *;
+
+.footer {
+    padding: 20px 40px;
+    color: $text-color;
+    text-align: center;
+    border-top: 1px solid #333;
+
+    p {
+        font-size: $font-body;
+        letter-spacing: 1px;
+        color: $text-color;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $title-color;
+        }
+    }
+    
+}
