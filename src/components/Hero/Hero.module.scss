@@ -1,3 +1,5 @@
+@use "@/assets/styles/variables" as *;
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -10,15 +12,28 @@
     flex: 1;
     width: 70%;
 
-    h1 {
-      font-size: 48px;
-      color: #EEEEEE;
-      margin-bottom: 2rem;
+    p.intro {
+      font-size: $font-body;
+      color: $text-color;
+      margin: 0;
     }
 
-    p {
-      font-size: 18px;
-      color: #EEEEEE;
+    h1 {
+      font-size: $font-h2;
+      color: $text-color;
+      margin: 0.3rem 0;
+      font-weight: bold;
+    }
+
+    p.role {
+      font-size: $font-body;
+      color: $text-color;
+       margin: 0 0 1.5rem 0;
+    }
+
+    p.description {
+      font-size: $font-body;
+      color: $text-color;
       line-height: 1.6;
       margin: 3rem 0;
     }
@@ -29,7 +44,7 @@
 
       button {
         background-color: #1A1A1A;
-        color: #EEEEEE;
+        color: $text-color;
         box-shadow: 0 4px 10px rgb(243, 241, 241);
         border: none;
         cursor: pointer;
@@ -54,7 +69,7 @@
       height: auto;
       border-radius: 50%;
       object-fit: cover;
-      border: 6px solid #EEEEEE;
+      border: 6px solid $text-color;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.97);
 
     }

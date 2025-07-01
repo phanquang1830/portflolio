@@ -6,16 +6,15 @@ const Hero: React.FC = () => {
     <section className={styles.hero}>
       {/* Bên trái: nội dung */}
       <div className={styles.content}>
-        <h1>Xin chào, tôi là <br />Phan Minh Quang</h1>
-        <p>
-          Em là một lập trình viên backend yêu thích code sạch, thích xây dựng hệ
-          thống hiệu quả và nuôi một chú chó siêu dễ thương 🐶. Mục tiêu của em là
-          trở thành một kỹ sư đáng tin cậy, tạo ra những sản phẩm có ích và chất
-          lượng.
+        <p className={styles.intro}>Hello, It's Me </p>
+        <h1>Phan Minh Quang </h1>
+        <p className={styles.role}>And I am a Backend Developer</p>
+        <p className={styles.description}>
+          A Backend Developer who loves coding, building efficient systems, and creating innovative solutions.
         </p>
-        <a href="#skills">
+        <a href="#about">
           <div className={styles.buttonWrapper}>
-          <button>Xem thêm về tôi</button>
+          <button>More About Me</button>
           </div>
         </a>
       </div>
