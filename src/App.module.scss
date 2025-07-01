@@ -5,7 +5,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; // Scroll mượt
+}
+
 body {
   background-color: #1A1A1A; // Màu chủ đạo 
   font-family: sans-serif;
 }
+
+section {
+  scroll-margin-top: 80px;
+}
+
