@@ -21,7 +21,7 @@ const Projects = () => {
             <span>SCSS</span>
           </div>
           <div className={styles.links}>
-            <a href="#" target="_blank">
+            <a href="https://portflolio.pages.dev/" target="_blank">
               <FaExternalLinkAlt /> Live
             </a>
             <a href="https://github.com/phanquang1830/portflolio.git" target="_blank">
