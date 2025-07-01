@@ -1,30 +1,14 @@
 @use "@/assets/styles/variables" as *;
 
-.container {
+.about {
+  min-height: 100vh;
+  background-color: $background-color;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   padding: 80px 100px;
-
-  .content {
-    flex: 1;
-    width: 70%;
-  }
-
-  h1 {
-    font-size: $font-h2;
-    color: $text-color;
-    margin-bottom: 2rem;
-  }
-
-  p {
-    font-size: $font-body;
-    color: $text-color;
-    line-height: 1.6;
-    margin: 3rem 0;
-  }
 
   .avatar {
     flex: 0 0 30%;
@@ -38,6 +22,62 @@
       border: 6px solid $text-color;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.97);
 
+    }
+  }
+
+  .content {
+    flex: 0 0 70%;
+  }
+
+  h2 {
+    font-size: $font-h2;
+    color: $text-color;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    .white {
+      color: $text-color;
+    }
+  }
+
+  p {
+    font-size: $font-body;
+    color: $text-color;
+    line-height: 1.6;
+    margin: 3rem 0;
+  }
+}
+
+.blue {
+  color: $title-color;
+}
+
+@media (max-width: 768px) {
+  .about {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 2rem;
+
+    .avatar {
+      margin-right: 0;
+      flex: none;
+      width: 180px;
+    }
+
+    .content {
+      width: 100%;
+
+      h2 {
+        font-size: $font-h2-mobile;
+      }
+
+      p {
+        font-size: $font-body-mobile;
+        margin: 1.5rem 0;
+      }
     }
   }
 }

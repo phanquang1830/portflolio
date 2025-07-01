@@ -3,22 +3,29 @@ import styles from "@/components/About/About.module.scss";
 
 const About: React.FC = () => {
   return (
-    <section className={styles.container}>
-       <div className={styles.avatar}>
+    <section className={styles.about}>
+      <div className={styles.avatar}>
         <img src="/images/avatar.jpg" alt="Avatar" />
       </div>
       <div className={styles.content}>
-        <h1>About me</h1>
+        <h2>
+          <span className={styles.white}>About </span>
+          <span className={styles.blue}>Me</span>
+        </h2>
         <p>
-          Xin chào, tôi là Phan Minh Quang, một lập trình viên Backend đam mê
-          với việc xây dựng hệ thống ổn định, tối ưu và dễ mở rộng. Tôi có kinh
-          nghiệm làm việc với các công nghệ như Node.JS, Express.JS, Sequelize,
-          MySQL và đang tiếp tục mở rộng kĩ năng ở các lĩnh vực như Docker,
-          CI/CD, Cloud và bảo mật hệ thống. Với tinh thần yêu thích clean code,
-          tôi luôn hướng tới việc phát triển những sản phẩm không chỉ hoạt động
-          tốt mà còn dễ bảo trì và mở rộng về sau. Tôi luôn cố gắng nỗ lực mỗi
-          ngày để có thể thiết kế và xây dựng những hệ thống chất lượng, ổn định
-          và giúp ích cho cộng đồng.
+          Hello, I'm <span className={styles.blue}>Phan Minh Quang</span> — a backend developer with a passion for
+          building stable, secure, and high-performance systems. I have
+          completed my internship as a Backend Developer, where I had the
+          opportunity to work on developing APIs and implementing real-world
+          business logic. During this time, I worked with technologies such as
+          Node.js, Express, and Sequelize, while gradually applying Clean Code
+          principles and Design Patterns to the projects. This hands-on
+          experience has helped me gain a deeper understanding of the software
+          development process, teamwork, source code management with Git, and
+          deploying systems to production environments. I am continuously
+          learning to improve my backend skills, expand my knowledge of system
+          architecture, security, and performance optimization — with the goal
+          of becoming a professional backend developer.
         </p>
       </div>
     </section>
