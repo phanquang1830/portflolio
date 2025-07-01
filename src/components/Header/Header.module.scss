@@ -1,9 +1,11 @@
+@use "@/assets/styles/variables" as *;
+
 .header {
     display: flex;
     justify-content: center;
     gap: 2rem;
     padding: 20px 40px;
-    background-color: #1A1A1A;
+    background-color: $background-color;
     position: sticky; // cố định header
     top: 0; // dùng với position: sticky để nó dính sát ở trên
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.08);
@@ -11,13 +13,13 @@
 
     a {
         text-decoration: none;
-        color: #FAF6F0;
+        color: $text-color;
         font-weight: 600;
         position: relative;
         transition: color 0.3s;
 
         &:hover {
-            color: #F4DFC8;
+            color: $title-color;
         }
 
         &::after {
@@ -27,7 +29,7 @@
             bottom: -4px;
             height: 2px;
             width: 100%;
-            background-color: #F4EAE0;
+            background-color: $title-color;
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.3s ease;
