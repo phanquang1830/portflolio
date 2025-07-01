@@ -10,13 +10,15 @@ const Hero: React.FC = () => {
         <h1>Phan Minh Quang </h1>
         <p className={styles.role}>And I am a Backend Developer</p>
         <p className={styles.description}>
-          A Backend Developer who loves coding, building efficient systems, and creating innovative solutions.
+          A Backend Developer who loves coding, building efficient systems, and
+          creating innovative solutions.
         </p>
-        <a href="#about">
-          <div className={styles.buttonWrapper}>
-          <button>More About Me</button>
-          </div>
-        </a>
+        
+        <div className={styles.buttonWrapper}>
+          <a href="#about" className={styles.button}>
+            More About Me
+          </a>
+        </div>
       </div>
 
       {/* Bên phải: avatar */}
@@ -24,7 +26,7 @@ const Hero: React.FC = () => {
         <img src="/images/avatar.jpg" alt="Avatar" />
       </div>
     </section>
-  );  
+  );
 };
 
 export default Hero;
