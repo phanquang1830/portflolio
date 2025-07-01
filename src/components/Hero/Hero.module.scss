@@ -7,10 +7,11 @@
   align-items: center;
   gap: 2rem;
   padding: 80px 100px;
+  background-color: $background-color;
+  min-height: 100dvh;
 
   .content {
-    flex: 1;
-    width: 70%;
+    flex: 0 0 70%;
 
     p.intro {
       font-size: $font-body;
@@ -20,7 +21,7 @@
 
     h1 {
       font-size: $font-h2;
-      color: $text-color;
+      color: $title-color;
       margin: 0.3rem 0;
       font-weight: bold;
     }
@@ -28,7 +29,7 @@
     p.role {
       font-size: $font-body;
       color: $text-color;
-       margin: 0 0 1.5rem 0;
+      margin: 0 0 1.5rem 0;
     }
 
     p.description {
@@ -42,22 +43,29 @@
       display: flex;
       justify-content: center;
 
-      button {
+      .button {
         background-color: #1A1A1A;
-        color: $text-color;
-        box-shadow: 0 4px 10px rgb(243, 241, 241);
-        border: none;
+        color: $title-color;
+        display: inline-block;
+        margin-top: 3rem;
+        box-shadow: 0 4px 10px rgba(243, 241, 241, 0.5);
+        border: 2px solid $title-color;
         cursor: pointer;
         font-weight: 600;
         border-radius: 20px;
         padding: 12px 24px;
-        margin-top: 36px;
-
+        text-decoration: none;
+        transition: 0.3s ease;
+  
         &:hover {
-          background-color: #000000;
+          color: #1A1A1A;
+          background-color: $title-color;
+          box-shadow: 0 0 15px $title-color, 0 0 30px $title-color;
+          transform: translateY(-3px) scale(1.05);
         }
       }
     }
+
   }
 
   .avatar {
@@ -78,28 +86,34 @@
 
 @media (max-width: 768px) {
   .hero {
+    min-height: 100dvh;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 40px 20px;
     gap: 2rem;
-  }
-
-  .content {
-    width: 100%;
     text-align: center;
+    
+
+    .content {
+    width: 100%;
+    flex: 1;
 
     h1 {
-      font-size: 36px;
+      font-size: $font-h2-mobile;
     }
 
     p {
-      font-size: 16px;
+      font-size: $font-body-mobile;
       margin: 1.5rem 0;
     }
   }
 
   .avatar {
+    order: -1; // Ưu tiên xếp trước (avatar nằm trên content khi responsive)
     margin-left: 0;
     flex: none;
-    width: 180px; 
+    width: 180px;
+  }
   }
 }
