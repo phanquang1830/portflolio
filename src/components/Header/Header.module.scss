@@ -40,3 +40,25 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+  .header {
+    gap: 1rem;
+    padding: 12px 20px;
+  }
+
+  .header a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    gap: 0.7rem;
+    padding: 10px 16px;
+  }
+
+  .header a {
+    font-size: 0.8rem;
+  }
+}
