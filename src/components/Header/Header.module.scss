@@ -1,64 +1,104 @@
 @use "@/assets/styles/variables" as *;
 
 .header {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 20px 40px;
-    background-color: $background-color;
-    position: sticky; // cố định header
-    top: 0; // dùng với position: sticky để nó dính sát ở trên
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.08);
-    z-index: 100; //Giúp header nổi trên các phần tử khác
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: $background-color;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.08);
 
-    a {
-        text-decoration: none;
-        color: $text-color;
-        font-weight: 600;
-        position: relative;
-        transition: color 0.3s;
-
-        &:hover {
-            color: $title-color;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -4px;
-            height: 2px;
-            width: 100%;
-            background-color: $title-color;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.3s ease;
-        }
-
-        &:hover::after{
-            transform: scaleX(1);
-        }
-    }
-}
-
-@media (max-width: 768px) {
-  .header {
-    gap: 1rem;
-    padding: 12px 20px;
+  .logo {
+    font-size: 1.5rem;
+    color: $title-color;
+    font-weight: 700;
   }
 
-  .header a {
-    font-size: 0.9rem;
+  .navLinks {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $title-color;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        height: 2px;
+        width: 100%;
+        background-color: $title-color;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  .menuIcon {
+    display: none;
+    cursor: pointer;
+    color: $text-color;
+    z-index: 200;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    .navLinks {
+      position: fixed;
+      top: 70px;
+      right: -100%;
+      transform: none;
+      left: auto;
+
+      background-color: $background-color;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 20px;
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: right 0.3s ease;
+      z-index: 150;
+    }
+
+    .navLinks.active {
+      right: 20px;
+    }
+
+    .menuIcon {
+      display: block;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    gap: 0.7rem;
-    padding: 10px 16px;
-  }
-
-  .header a {
-    font-size: 0.8rem;
+    .navLinks {
+      width: 160px;
+      gap: 1rem;
+      padding: 16px;
+    }
   }
 }
