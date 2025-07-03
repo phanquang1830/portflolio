@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/quang-phan-minh-325305361/"
+              href="#" //https://www.linkedin.com/in/quang-phan-minh-325305361/
               target="_blank"
             >
               <svg
