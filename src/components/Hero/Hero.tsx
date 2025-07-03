@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.scss";
+import TypingText from "../TypingText/TypingText";
 
 const Hero: React.FC = () => {
   return (
@@ -8,7 +9,9 @@ const Hero: React.FC = () => {
       <div className={styles.content}>
         <p className={styles.intro}>Hello, It's Me </p>
         <h1>Phan Minh Quang </h1>
-        <p className={styles.role}>And I am a Backend Developer</p>
+        <p className={styles.role}>
+          <TypingText textToType="I am a Backend Developer" />
+        </p>
         <p className={styles.description}>
           A Backend Developer who loves coding, building efficient systems, and
           creating innovative solutions.
