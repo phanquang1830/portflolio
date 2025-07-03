@@ -86,7 +86,6 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100dvh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -111,7 +110,6 @@
 
   .avatar {
     order: -1; // Ưu tiên xếp trước (avatar nằm trên content khi responsive)
-    margin-left: 0;
     flex: none;
     width: 180px;
   }

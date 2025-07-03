@@ -10,11 +10,10 @@ const Hero: React.FC = () => {
         <p className={styles.intro}>Hello, It's Me </p>
         <h1>Phan Minh Quang </h1>
         <p className={styles.role}>
-          <TypingText textToType="I am a Backend Developer" />
+          <TypingText textToType="Backend Developer" />
         </p>
         <p className={styles.description}>
-          A Backend Developer who loves coding, building efficient systems, and
-          creating innovative solutions.
+          I am passionate about coding, developing efficient systems, and creating innovative solutions.
         </p>
         
         <div className={styles.buttonWrapper}>

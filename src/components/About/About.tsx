@@ -13,19 +13,19 @@ const About: React.FC = () => {
           <span className={styles.blue}>Me</span>
         </h2>
         <p>
-          Hello, I'm <span className={styles.blue}>Phan Minh Quang</span> — a backend developer with a passion for
-          building stable, secure, and high-performance systems. I have
-          completed my internship as a Backend Developer, where I had the
-          opportunity to work on developing APIs and implementing real-world
-          business logic. During this time, I worked with technologies such as
-          Node.js, Express, and Sequelize, while gradually applying Clean Code
-          principles and Design Patterns to the projects. This hands-on
-          experience has helped me gain a deeper understanding of the software
-          development process, teamwork, source code management with Git, and
-          deploying systems to production environments. I am continuously
-          learning to improve my backend skills, expand my knowledge of system
-          architecture, security, and performance optimization — with the goal
-          of becoming a professional backend developer.
+          Hello, I'm <span className={styles.blue}>Phan Minh Quang</span> — a
+          backend developer with a passion for building stable, secure, and
+          high-performance systems. I have hands-on experience in developing
+          APIs and implementing real-world business logic. During this time, I
+          have worked with technologies such as Node.js, Express, and Sequelize,
+          while progressively applying Clean Code principles and design patterns
+          to my projects. This practical experience helped me gain a deeper
+          understanding of the software development process, teamwork, source
+          code management using Git, and deploying systems to production
+          environments. I am continuously improving my backend development
+          skills and expanding my knowledge in system architecture, security,
+          and performance optimization — with the goal of becoming a
+          professional backend developer.
         </p>
       </div>
     </section>

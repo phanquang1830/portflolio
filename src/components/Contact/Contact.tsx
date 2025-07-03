@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.info}>
           <p>
-            If you have any questions or want to collaborate, feel free to
+            If you have any questions or would like to collaborate, feel free to
             contact me.
           </p>
           {/* Contact Info */}

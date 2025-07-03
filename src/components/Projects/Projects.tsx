@@ -35,7 +35,7 @@ const Projects = () => {
           <img src="/images/Member_Hub_Website.png" alt="Member Hub Website" />
           <h3>Member Hub Website</h3>
           <p>
-           As the team leader and backend developer, I was responsible for building the API system, including core endpoints like GetAllListEvent and GetEventById, ensuring smooth data delivery for the frontend.
+           As the team leader and backend developer, I was responsible for building the API system, including core endpoints such as GetAllListEvent and GetEventById, ensuring smooth data delivery for the frontend.
           </p>
           <div className={styles.tech}>
             <span>Node.js</span>
