@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -6,7 +8,8 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
-import styles from "./App.module.scss"
+
+import styles from "./App.module.scss";
 
 function App() {
   return (
@@ -15,23 +18,58 @@ function App() {
 
       <main>
         <section id="home">
-          <Hero />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true , amount: 0.3 }}
+          >
+            <Hero />
+          </motion.div>
         </section>
 
         <section id="about">
-          <About />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true , amount: 0.3 }}
+          >
+            <About />
+          </motion.div>
         </section>
 
         <section id="skills">
-          <Skills />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true , amount: 0.3 }}
+          >
+            <Skills />
+          </motion.div>
         </section>
 
         <section id="projects">
-          <Projects />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true , amount: 0.3 }}
+          >
+            <Projects />
+          </motion.div>
         </section>
 
         <section id="contact">
-          <Contact />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true , amount: 0.3 }}
+          >
+            <Contact />
+          </motion.div>
         </section>
       </main>
 
@@ -40,5 +78,4 @@ function App() {
   );
 }
 
-
-export default App
+export default App;
